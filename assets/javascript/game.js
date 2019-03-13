@@ -134,8 +134,9 @@ function checkWin() {
 	if (pickedWord.toLowerCase() === pickedWordPlaceholderArr.join('').toLowerCase()) {
 		wins++;
 		document.getElementById("wins").textContent = wins;
-		alert ("You Win!");
-	}
+        alert ("You Win!");
+    }
+   
 }
 
 // EventLister for new game button
