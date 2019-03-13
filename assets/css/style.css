@@ -1,11 +1,9 @@
-/* Global Style */
+
 body {
     color: #92c6ea;
     background-color: #0555a7;
     }
 
-/* Global Style ends */
-/* Jumbrotron begins */
 .jumbotron-fluid { /*style the background to make it fit nicely*/
     background-image: url("../images/background.jpeg");
         height: 500px !important;
@@ -13,8 +11,6 @@ body {
     background-size: 100% !important;
     background-position: top center;
 }
-/* Jumbrotron ends */
-/* Main content - Buttons*/
 
 #new-game-button {
     outline: none;
