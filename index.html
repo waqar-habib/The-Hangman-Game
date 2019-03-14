@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>The Hangman Game</title>
+        <title>The Word Guessing Game</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,8 +14,9 @@
         <div class="jumbotron-fluid">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">The Hangman Game</h1>
-                  <p class="lead">Guess the word in 8 tries to win!</p>
+                  <h1 class="display-4">The Word Guessing Game</h1>
+                  <p class="lead">Guess the word in 10 tries to win!</p>
+                  <p class="lead">Warning: Pressing "Enter/Return" or "Space" will RESET the game!</p>
                   <button class="btn btn-primary btn-lg" id="new-game-button">
                       <i class="fas fa-gamepad"></i>
                       Start New Game
@@ -30,7 +31,7 @@
         
         <div class="container-fluid">
             
-            <div class="row">
+            <div class="row" id="container-text">
                 <div class="col-md-12 text-center py-5" id="placeholder-section">
                     <!--Left: guess word//Right: incorrect letters guessed-->
                     <div class="row">

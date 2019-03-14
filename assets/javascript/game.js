@@ -9,7 +9,7 @@ var losses = document.getElementById('losses');
 
 //Create variables for game (wordBank, wins, losses, wordPicked, guessesLeft, gameRunning, pickedWord, pickedWordPlaceholderArr guessedLetterBank, incorrectLetterBank)
 
-var wordBank = ['Paris', 'Dubai', 'Kuala Lumpur', 'Istanbul', 'Karachi', 'Houston', 'Ho Chi Minh City', 'Mexico City', 'Austin', 'Addis Ababa', 'Abu Dhabi', 'Riyadh', 'Hyderabad', 'Port Au Prince'];
+var wordBank = ['Paris', 'Dubai', 'Kuala Lumpur', 'Istanbul', 'Karachi', 'Houston', 'Ho Chi Minh City', 'Mexico City', 'Austin', 'Addis Ababa', 'Abu Dhabi', 'Riyadh', 'Hyderabad', 'San Diego', 'Moscow', 'San Francisco', 'San Antonio', 'Mumbai', 'Munich', 'Cape Town', 'Calgary', 'Tokyo', 'Toronto', 'New York City', 'Boston', 'Cairo', 'Salt Lake City', 'Denver', 'Madrid', 'Seattle', 'Fort Myers', 'Nashville', 'Chicago', 'Providence','Rome', 'Barcelona', 'Frankfurt', 'Berlin', 'Manchester', 'London', 'Melbourne', 'Jerusalem', 'Shanghai', 'Anchorage', 'Vancouver', 'Portland'];
 
 /* Set initial wins/losses to 0*/
 
@@ -18,7 +18,7 @@ var losses = 0;
 
 /* Initially want the game to not run, UNTIL the user presses the new game button */
 
-var guessesLeft = 8;
+var guessesLeft = 10;
 var gameRunning = false;
 
 /* empty string where the picked word would go */
@@ -34,7 +34,7 @@ var incorrectLetterBank = [];
 function newGame () {
     // Reset all game stats
     gameRunning = true;
-    guessesLeft = 8;
+    guessesLeft = 10;
     guessedLetterBank = [];
     incorrectLetterBank = [];
     pickedWordPlaceholderArr = [];
@@ -123,7 +123,7 @@ function checkLoss() {
         losses++;
         gameRunning = false;
         document.getElementById("losses").textContent = losses;
-        alert ("You Lost!");
+        alert ("You suck! The Correct Answer was:" + " " + pickedWord);
     }
     checkWin();
 }
@@ -134,7 +134,7 @@ function checkWin() {
 	if (pickedWord.toLowerCase() === pickedWordPlaceholderArr.join('').toLowerCase()) {
 		wins++;
 		document.getElementById("wins").textContent = wins;
-        alert ("You Win!");
+        alert ("You Win! Go get yourself a cookie!");
     }
    
 }

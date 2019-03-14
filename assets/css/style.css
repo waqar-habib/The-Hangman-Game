@@ -70,3 +70,29 @@ h2, h3 {
     color: #ffffff;
 }
 
+/* Media Queries*/
+
+/* If the screen size is 320px wide or more */
+@media only screen and (min-width: 320px) {
+    .display-4 {
+      font-size: 1.5rem;
+    }
+    .jumbotron-fluid { 
+        height: 300px !important;
+        background-repeat: repeat-y;
+        height: 100vh;
+    }
+    #new-game-button {
+        
+        background-color: #51adee;
+        position: relative;
+        font-size: 15px;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 15px;
+        border-radius: 13px;
+        box-shadow: 0 1px #5f5f5e;
+    }
+ }
